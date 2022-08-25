@@ -21,19 +21,4 @@ function Spinner() {
 }
 
 
-// function Spinner() {
-//     const spin = useSelector(state => state.loaderReducer.loading);
-//     return (
-//         <div className='spinner-styles'>
-//             Загружаем билеты...
-//             <TailSpin
-//                 color='#00BFFF'
-//                 height={80}
-//                 width={80}
-//                 visible={spin}
-//             />
-//         </div>
-//     );
-// }
-
 export default Spinner;

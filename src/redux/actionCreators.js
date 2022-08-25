@@ -31,7 +31,7 @@ function getTickets(searchId) {
     return async dispatch => {
         dispatch(loaderDisplayOn());
         try {
-            let searchTickets = await axios.get(`https://aviasales-test-api.kata.academy/tickets?searchId=${searchId.data.searchId}`);
+            const searchTickets = await axios.get(`https://aviasales-test-api.kata.academy/tickets?searchId=${searchId.data.searchId}`);
             if (searchTickets.status === 500) {
                 dispatch(getTickets(searchId));
             }

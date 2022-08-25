@@ -39,7 +39,7 @@ function TicketList({ tickets, viewTickets, filtersButton, transfersItems }) {
         const countTransfersBack = item.segments[1].stops.length;
         if (selectedTransfers.includes(countTransfersThere) && selectedTransfers.includes(countTransfersBack)) {
             return item;
-        }
+        } else return null;
     });
     if (!filtrationArr.length) {
         return (

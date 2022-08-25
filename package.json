@@ -17,7 +17,8 @@
     "redux-thunk": "^2.4.1",
     "sass": "^1.53.0",
     "uuid": "^8.3.2",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "date-fns": "^2.28.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -27,8 +28,7 @@
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
     "format": "prettier ./src/**/*.js",
-    "prepare": "husky install",
-    "create-hook": "husky add .husky/pre-commit \"npm test\""
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -76,4 +76,3 @@
     ]
   }
 }
- 

@@ -2,7 +2,7 @@ import { formatPrice, formatTime, TransferTime, declensionOfName } from '../../u
 import './Ticket.scss';
 
 function Ticket({ el}) {
-    const __imageBase = 'https://pics.avs.io/99/36/';
+    const __imageBase = 'https://pics.avs.io/99/36/'; // eslint-disable-line
     const airLogo = el.carrier ? `${__imageBase}${el.carrier}.png` : null;
     return (
         <div className='ticket'>

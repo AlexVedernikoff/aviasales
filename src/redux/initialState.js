@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/prefer-default-export
 export const initialState = {
     filtersButton: [
         { name: 'cheap', label: 'Самый дешевый', isActive: true },
