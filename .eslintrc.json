@@ -63,7 +63,7 @@
             "error",
             "always"
         ],
-        "func-names": ["warning", "as-needed"],
+        "func-names": [1, "as-needed"],
         "max-len": "off",
         "jsx-a11y/label-has-associated-control": "off",
         "jsx-a11y/control-has-associated-label": "off",
