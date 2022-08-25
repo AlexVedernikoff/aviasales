@@ -29,7 +29,6 @@
     "format": "prettier ./src/**/*.js",
     "prepare": "husky install",
     "create-hook": "husky add .husky/pre-commit \"npm test\""
-}
   },
   "eslintConfig": {
     "extends": [
