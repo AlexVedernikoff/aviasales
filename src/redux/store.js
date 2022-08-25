@@ -12,17 +12,17 @@ const reducers = combineReducers({
 });
 
 const composeEnhancers =
-  typeof window === "object" && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
-    ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({
-        // Specify extension’s options like name, actionsDenylist, actionsCreators, serialize...
+  typeof window === 'object' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
+      ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({
+          // Specify extension’s options like name, actionsDenylist, actionsCreators, serialize...
       })
-    : compose;
+      : compose;
 
 
 const store = createStore(reducers, 
     composeEnhancers(applyMiddleware(
         thunk
-    )))
+    )));
 
 
 export default store;
