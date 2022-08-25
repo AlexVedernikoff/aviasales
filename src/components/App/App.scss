@@ -1,0 +1,39 @@
+
+.app {
+    margin: 0 auto;
+    width: 900px;
+    height: 100%;
+    color:#4A4A4A;
+}
+
+.app__header{
+    padding: 50px;
+    text-align: center;
+}
+
+.app__main {
+    display: grid;
+    grid-template-areas: 
+    'transfers filters'
+    'transfers tickets'
+    'spin tickets'
+    '. tickets'
+    '. button'; 
+}
+
+.error-message {
+    color: aliceblue;
+    text-align: center;
+    background-color: red;
+}
+
+.not-found {
+    color: aliceblue;
+    background-color: #2196F3;
+    width: 81%;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
